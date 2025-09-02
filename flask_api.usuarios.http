@@ -1,0 +1,26 @@
+### Criar Usuário (POST /users)
+POST http://127.0.0.1:5000/users
+Content-Type: application/json
+
+{
+  "nome": "João",
+  "email": "joao@email.com"
+}
+
+### Listar Todos os Usuários (GET /users)
+GET http://127.0.0.1:5000/users
+
+### Buscar Usuário por ID (GET /users/:id)
+GET http://127.0.0.1:5000/users/1
+
+### Atualizar Usuário (PUT /users/:id)
+PUT http://127.0.0.1:5000/users/1
+Content-Type: application/json
+
+{
+  "nome": "João Silva",
+  "email": "joaosilva@email.com"
+}
+
+### Deletar Usuário (DELETE /users/:id)
+DELETE http://127.0.0.1:5000/users/1
